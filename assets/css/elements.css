@@ -1,0 +1,71 @@
+.elements {
+    padding: 15px;
+    margin: 0px;
+    position: fixed;
+    z-index: 100;
+    background-color: white !important;
+    box-shadow: 0px 2px 1px dimgrey;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+
+.elements > ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.elements > ul > li,
+.elements > div > button {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1f6fb2;
+    color: white;
+    position: relative;
+}
+
+.elements > div > button {
+    border: none;
+}
+
+.elements > ul > li:hover {
+    background-color: #1b4b72;
+}
+
+.elements > ul > li:hover ul {
+    background-color: transparent !important;
+    display: block;
+}
+
+.elements > ul > li > ul {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    top: 33px;
+    left: 0px;
+    z-index: 100;
+
+}
+
+.elements > ul > li > ul > li {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1b4b72;
+    color: white;
+    position: relative;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.elements > ul > li > ul > li:hover {
+    background-color: #1f6fb2;
+}

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Montserrat-ExtraLight;
+    src: url("./../fonts/Montserrat-Regular.ttf");
+}
+
+* {
+    /*font-family: 'Montserrat-ExtraLight', sans-serif !important;*/
+    box-sizing: border-box !important;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+table tr td,
+table tr th {
+    outline: 1px solid dimgrey !important;
+}
+
+#cb_editor {
+    position: relative;
+}
+
+
+#content-editor {
+    margin: 120px 0px 0px 0px;
+    padding: 0px;
+    /*box-shadow: 3px 3px 3px 8px lightgrey;*/
+    /*min-height: 300px;*/
+    /*border: 1px solid lightgrey;*/
+    /*font-size: large !important;*/
+}
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    pointer-events: none;
+    color: dimgrey;
+    display: block; /* For Firefox */
+}

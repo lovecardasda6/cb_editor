@@ -1,0 +1,43 @@
+
+.element {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    outline: 1px solid lightgrey;
+}
+.paragraph:focus,
+.header:focus,
+.table:focus,
+.column:focus{
+    outline: none;
+}
+
+.div{
+    outline: 1px solid lightgrey;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+/*.element > div > *:focus{*/
+/*    outline: none;*/
+/*}*/
+
+/*.line-break,*/
+/*.paragraph,*/
+/*.table,*/
+/*.column,*/
+/*.list,*/
+/*.div{*/
+/*    outline: 1px solid lightgrey;*/
+/*    cursor: pointer;*/
+/*    padding: 0 !important;*/
+/*    margin: 0 !important;*/
+/*}*/
+
+/*.div{*/
+/*    background-color: lightgrey;*/
+/*}*/
+
+/*.div{*/
+/*    background-color: lightgrey;*/
+/*}*/
